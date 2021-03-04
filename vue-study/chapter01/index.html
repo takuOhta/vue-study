@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue App</title>
+    <link rel="stylesheet" href="/chapter01/main.js">
+</head>
+<body>
+    <div id="app">
+        <transition>
+        <p v-if="show">{{message}}</p>
+        <ol v-if="show">
+            <li v-for="item in list">{{item}}</li>
+        </ol>
+        </transition>
+        <button v-on:click="handleClick">click me</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+    <script src="/chapter01/main.js"></script>
+</body>
+</html>
